@@ -6,8 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   
-      <link rel="stylesheet" href="css/style.css">
-
+  
   
 </head>
 
@@ -32,45 +31,43 @@
   }
 }
  
-@media all and (max-width: 959px) and (min-width: 750px) {
+@media all and (max-width: 959px) and (min-width: 700px) {
     body{
         font-size: 14px;
     }
-  #bannerCont{
-    position: relative;
-    top:0%;
-    left:40%;
-    width: 20%;
-    height: 30%;
+    #bannerCont{
+      position: relative;
+      top:0%;
+      left:40%;
+      width: 20%;
+      height: 30%;
   }
 }
  
-@media all and (max-width: 749px) and (min-width: 546px) {
+@media all and (max-width: 699px) and (min-width: 500px) {
     body{
         font-size: 10px;
     }
-  #bannerCont{
-    position: relative;
-    top:0%;
-    left:35%;
-    width: 30%;
-    height: 30%;
-  
+    #bannerCont{
+      position: relative;
+      top:0%;
+      left:35%;
+      width: 30%;
+      height: 30%;
   }
   
 }
  
-@media all and (max-width: 545px) and (min-width: 120px) {
+@media all and (max-width: 499px) and (min-width: 120px) {
     body{
         font-size: 10px;
     }
-  #bannerCont{
-    position: relative;
-    top:0%;
-    left:30%;
-    width: 40%;
-    height: 30%;
-  
+    #bannerCont{
+      position: relative;
+      top:0%;
+      left:30%;
+      width: 40%;
+      height: 30%;
 }
  
 }
@@ -131,8 +128,8 @@ h3 { font-family: 'Cookie', cursive;
   display:-webkit-box;
   display:-ms-flexbox;
   display:flex;
-    width: 30%;
-    height: 30%;
+    width: 25%;
+    height: 25%;
     margin: 10px;
 }
 
@@ -142,9 +139,12 @@ h3 { font-family: 'Cookie', cursive;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 10px;
+  padding: 15px;
   border-radius: 14px;
   overflow: hidden;
+  justify-content: center;
+  max-width:850px;
+  
 }
 
   .Group__card {
@@ -154,6 +154,7 @@ h3 { font-family: 'Cookie', cursive;
     border: none;
     border-radius: 10px
     border-left: 4px solid #FF5651;
+    
   }
 
 
@@ -168,6 +169,7 @@ h3 { font-family: 'Cookie', cursive;
   border: 5px solid #FF5651;
   border-radius: 18px;
   overflow: hidden;
+ 
 }
 
 
@@ -179,7 +181,7 @@ h3 { font-family: 'Cookie', cursive;
     border-top: 1px solid #D7DBDD;
     border-radius: 10px;
     background-color: #FF5651;
- font-family: 'Cookie', cursive;
+    font-family: 'Cookie', cursive;
     text-shadow: 1px 3px 1px rgba(0, 0, 0, 0.3);
   }
 
@@ -229,7 +231,7 @@ h3 { font-family: 'Cookie', cursive;
     font-size: 1.3em;
     font-family:Monospace;
     text-align: justify;
-     padding: 5px 15px;
+     padding: 5px 150px;
     justify-content: center;
   
   }
@@ -249,7 +251,8 @@ h3 { font-family: 'Cookie', cursive;
 
 
 .btn1:hover {
-    background-color: #00AAF2;
+    background-color: #42A5F5;
+    opacity: 0.85;
  
 }
 
@@ -426,9 +429,11 @@ li a {
      
   <br>
  
-<h1><b><i>The Foreigner's Guide To Most Quirky British Habits</h1></b></i>
+<h1 id="top"><b><i>The Foreigner's Guide To Most Quirky British Habits</h1></b></i>
   
  <!--banner with changing images; subject to media queries-->
+  
+  
     
    <div id="bannerCont">
   <div class="slide bottom"></div>
@@ -442,6 +447,7 @@ li a {
   <br>
   
   <!--Flexbox cards with navigation hyperlinks-->
+  <div class="column flexible">
 <div class="Group">
   <div class="card Group__card">
     <div class="column flexible">
@@ -465,6 +471,7 @@ li a {
     <div class="question"><a class="btn1" href="#tea">...love tea with milk?</a></div>
   </div>
 </div>
+  </div>
   <!--end of Flexbox cards -->
   <div class="Flex_Item">
 <!--first paragraph (inside flexbox; font responsive to media queries)-->
@@ -529,8 +536,11 @@ With the advance of modern plumbing systems, such risk is easily avoided; howeve
   </ul>
   </div>
   <!--end of social media icons-->
+  <h2><center><a href="#top">Top</a></center></h2>
 </html>
-  
-  
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+
+    <script src="js/index.js"></script>
+
 </body>
 </html>
