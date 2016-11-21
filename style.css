@@ -1,0 +1,404 @@
+/*imports fonts*/
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+@import url(http://fonts.googleapis.com/css?family=Cookie);
+
+/*media queries for fonts and banner*/  
+
+@media all and (min-width: 960px) {
+    body{
+        font-size: 16px;
+    }
+    #bannerCont{
+      position: relative;
+      top:0%;
+      left:42.5%;
+      width: 15%;
+      height: 30%;  
+  }
+}
+ 
+@media all and (max-width: 959px) and (min-width: 750px) {
+    body{
+        font-size: 14px;
+    }
+  #bannerCont{
+    position: relative;
+    top:0%;
+    left:40%;
+    width: 20%;
+    height: 30%;
+  }
+}
+ 
+@media all and (max-width: 749px) and (min-width: 546px) {
+    body{
+        font-size: 10px;
+    }
+  #bannerCont{
+    position: relative;
+    top:0%;
+    left:35%;
+    width: 30%;
+    height: 30%;
+  
+  }
+  
+}
+ 
+@media all and (max-width: 545px) and (min-width: 120px) {
+    body{
+        font-size: 10px;
+    }
+  #bannerCont{
+    position: relative;
+    top:0%;
+    left:30%;
+    width: 40%;
+    height: 30%;
+  
+}
+ 
+}
+
+/*main attributes*/
+
+body {
+    background: url(https://images.freecreatives.com/wp-content/uploads/2016/02/Free-Blue-Polka-Dot-Background.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    margin: 0;
+    padding: 0px;
+}
+
+body, html{
+  height: 100%;
+  width: 100%;
+}
+
+h1 { font-family: 'Cookie', cursive;
+  text-align: center;
+  font-size:3em;
+  margin: 20px;
+  color: #FF5651;
+  text-shadow: 1px 3px 1px rgba(0, 0, 0, 0.3);
+}
+
+h2 { font-family: 'Cookie', cursive;
+  text-align: center;
+  margin: 10px;
+  color: black;
+  font-size: 1.3em;
+  text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.3);
+}
+
+h3 { font-family: 'Cookie', cursive;
+  text-align: center;
+  margin: 10px;
+  color: black;
+  font-size: 2em;
+  text-shadow: 1px 3px 1px rgba(0, 0, 0, 0.3);
+}
+
+/*small pics*/
+.flex-pic {
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+    width: 50%;
+    height: 50%;
+    margin: 10px;  
+}
+
+/*larger pics*/
+.flex-pic2 {
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+    width: 30%;
+    height: 30%;
+    margin: 10px;
+}
+
+/*attributes for flex cards*/
+
+.Group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+  .Group__card {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 0%;
+            flex: 1 1 0%;
+    border: none;
+    border-radius: 10px
+    border-left: 4px solid #FF5651;
+  }
+
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 5px solid #FF5651;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+
+  .question {
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 700;
+    padding: 5px 15px;
+    border-top: 1px solid #D7DBDD;
+    border-radius: 10px;
+    background-color: #FF5651;
+ font-family: 'Cookie', cursive;
+    text-shadow: 1px 3px 1px rgba(0, 0, 0, 0.3);
+  }
+
+/*other generic attributes used for flexboxes*/
+  .flexible {
+    -webkit-box-flex: 11;
+        -ms-flex: 11 auto;
+            flex: 11 auto;    
+  }
+
+
+  .column {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+     -webkit-box-align: center;
+         -ms-flex-align: center;
+             align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 10px 0;    
+  }
+
+/*attributes used for paragraphs*/
+
+.Flex_Item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px;
+}
+
+.Flex_Item + .Flex_Item {
+  border-top: 3px solid #FF5651;
+}
+
+  .Flex_Item_description {
+    color: black;
+    font-size: 1.3em;
+    font-family:Monospace;
+    text-align: justify;
+     padding: 5px 15px;
+    justify-content: center;
+  
+  }
+
+/*attributes for navigation buttons on cards*/
+
+.btn1 {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 16px;
+  border-radius: 15px;
+    text-decoration: none;
+   -webkit-transition: all .9s ease;
+    transition: all .9s ease;
+}
+
+
+.btn1:hover {
+    background-color: #00AAF2;
+ 
+}
+
+/*attributes for social icon buttons*/
+
+.social-icon {
+    color: #fff;
+}
+
+.social-icons li {
+    vertical-align: top;
+    display: inline;
+    height: 100px;
+}
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+}
+.fa-facebook {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-facebook:hover {
+    background-color: #3d5b99;
+}
+.fa-twitter {
+    padding:10px 12px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-twitter:hover {
+    background-color: #00aced;
+}
+.fa-rss {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-rss:hover {
+    background-color: #eb8231;
+}
+.fa-youtube {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-youtube:hover {
+    background-color: #e64a41;
+}
+.fa-linkedin {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-linkedin:hover {
+    background-color: #0073a4;
+}
+.fa-google-plus {
+    padding:10px 9px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-google-plus:hover {
+    background-color: #e25714;
+}
+
+
+li {
+    float: left;
+    display: inline;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+}
+
+/*attributes for the banner*/
+
+
+.slide{
+  position: absolute;
+  padding-bottom: 100%;
+  width: 100%;
+  -moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.bottom{
+  z-index: 1;
+  background-image: url(http://i.dailymail.co.uk/i/pix/2016/01/05/15/214744B100000578-3385495-image-a-124_1452006809097.jpg);
+}
+.middle{
+  z-index: 2;
+  background-image: url(https://ermehgerditssteffiluren.files.wordpress.com/2014/09/te-mafakka.jpg);
+  -webkit-animation: fadeMiddle 10s infinite;
+  animation: fadeMiddle 10s infinite;
+}
+.top{
+  z-index: 3;
+  background-image: url(https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQS5G-7svpQqBZSlx5SoCSTqvMCeTq7DUH80PAywfQjbBKjQjSV);
+  -webkit-animation: fadeTop 10s infinite;
+  animation: fadeTop 10s infinite;
+}
+
+@-webkit-keyframes fadeTop{
+  0% {opacity: 1;}
+  27% {opacity: 1;}
+  33% {opacity: 0;}
+  94% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@-webkit-keyframes fadeMiddle{
+  0% {opacity: 1;}
+  60% {opacity: 1;}
+  66% {opacity: 0;}
+  99% {opacity: 0;}
+  100%{opacity: 1;}
+}
+@-keyframes fadeTop{
+  0% {opacity: 1;}
+  27% {opacity: 1;}
+  33% {opacity: 0;}
+  94% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@-keyframes fadeMiddle{
+  0% {opacity: 1;}
+  60% {opacity: 1;}
+  66% {opacity: 0;}
+  99% {opacity: 0;}
+  100%{opacity: 1;}
+}
+
+
+
