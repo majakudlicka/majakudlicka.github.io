@@ -5,17 +5,32 @@
 
 /*media queries for fonts and banner*/  
 
-@media all and (min-width: 960px) {
+/media all and (min-width: 960px) {
     body{
         font-size: 16px;
+        width: 80%;
     }
+  
     #bannerCont{
       position: relative;
       top:0%;
       left:42.5%;
       width: 15%;
-      height: 30%;  
+      height: 30%;
   }
+  
+  
+      .Flex_Item_description {
+    color: black;
+    font-size: 1.3em;
+    font-family:Monospace;
+    text-align: justify;
+     width: 95%;
+    padding: 5px 150px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+      justify-content: center;}
+  
 }
  
 @media all and (max-width: 959px) and (min-width: 700px) {
@@ -29,6 +44,18 @@
       width: 20%;
       height: 30%;
   }
+  
+      .Flex_Item_description {
+    color: black;
+    font-size: 1.3em;
+    font-family:Monospace;
+    text-align: justify;
+     width: 95%;
+    padding: 5px 100px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+      justify-content: center;}
+  
 }
  
 @media all and (max-width: 699px) and (min-width: 500px) {
@@ -43,11 +70,23 @@
       height: 30%;
   }
   
+      .Flex_Item_description {
+    color: black;
+    font-size: 1.3em;
+    font-family:Monospace;
+    text-align: justify;
+     width: 95%;
+    padding: 5px 50px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+      justify-content: center;}
+ 
 }
  
 @media all and (max-width: 499px) and (min-width: 120px) {
     body{
         font-size: 10px;
+      
     }
     #bannerCont{
       position: relative;
@@ -56,10 +95,22 @@
       width: 40%;
       height: 30%;
 }
- 
+  
+    .Flex_Item_description {
+    color: black;
+    font-size: 1.3em;
+    font-family:Monospace;
+    text-align: justify;
+     width: 95%;
+    /* padding: 5px 150px;*/
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+      justify-content: center;}
+  
+  
 }
 
-/*main attributes*/
+/*main attribtes*/
 
 body {
     background: url(https://images.freecreatives.com/wp-content/uploads/2016/02/Free-Blue-Polka-Dot-Background.jpg) no-repeat center center fixed;
@@ -86,7 +137,7 @@ h2 { font-family: 'Cookie', cursive;
   text-align: center;
   margin: 10px;
   color: black;
-  font-size: 1.3em;
+  font-size: 1.7em;
   text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.3);
 }
 
@@ -94,7 +145,7 @@ h3 { font-family: 'Cookie', cursive;
   text-align: center;
   margin: 10px;
   color: black;
-  font-size: 2em;
+  font-size: 3em;
   text-shadow: 1px 3px 1px rgba(0, 0, 0, 0.3);
 }
 
@@ -109,7 +160,7 @@ h3 { font-family: 'Cookie', cursive;
 }
 
 /*larger pics*/
-.flex-pic2 {
+.flex-pic--big {
   display:-webkit-box;
   display:-ms-flexbox;
   display:flex;
@@ -213,17 +264,7 @@ h3 { font-family: 'Cookie', cursive;
   border-top: 3px solid #FF5651;
 }
 
-  .Flex_Item_description {
-    color: black;
-    font-size: 1.3em;
-    font-family:Monospace;
-    text-align: justify;
-     padding: 5px 150px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  
-  }
+
 
 /*attributes for navigation buttons on cards*/
 
@@ -341,17 +382,17 @@ li a {
   background-repeat: no-repeat;
   background-position: center;
 }
-.bottom{
+.slide--bottom{
   z-index: 1;
   background-image: url(http://i.dailymail.co.uk/i/pix/2016/01/05/15/214744B100000578-3385495-image-a-124_1452006809097.jpg);
 }
-.middle{
+.slide--middle{
   z-index: 2;
   background-image: url(https://ermehgerditssteffiluren.files.wordpress.com/2014/09/te-mafakka.jpg);
   -webkit-animation: fadeMiddle 10s infinite;
   animation: fadeMiddle 10s infinite;
 }
-.top{
+.slide--top{
   z-index: 3;
   background-image: url(https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQS5G-7svpQqBZSlx5SoCSTqvMCeTq7DUH80PAywfQjbBKjQjSV);
   -webkit-animation: fadeTop 10s infinite;
